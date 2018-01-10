@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inspiration | Genbrustikken</title>
+    <link rel="stylesheet" href="inspiration.css">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Molengo" rel="stylesheet">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script>
+    $(function() {
+
+        $("#slideshow > div:gt(0)").hide();
+
+        setInterval(function() {
+          $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+        },  3000);
+
+    });
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109504769-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109504769-1');
+</script>
+
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div class="logo">
+          <a class="logo" href="index.html">GENBRUTIKKEN</a>
+        </div>
+      </header>
+
+<!-- navigation -->
+      <div class="nav-container">
+        <ul class="menu">
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="produkter.html">Produkter</a></li>
+          <li id="active"><a href="inspiration.html">Inspiration</a></li>
+          <li><a href="omos.html">Om os</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+<p>Vi opfordrer altid vores kunder til at bruge deres fantasi, være kreative og finde deres helt egen måde at komplimentere deres nye møbel ind i deres hjem på.
+  Her på siden kan du se, hvordan nogle af vores foregående møbler har fundet sig til rette i deres nye liv.</p>
+      <div id="slideshow">
+      <div><img src="img/fotoa.jpg" alt="" /></div>
+      <div><img src="img/fotob.jpg" alt="" /></div>
+      <div><img src="img/fotoc.jpg" alt="" /></div>
+      <div><img src="img/fotod.jpg" alt="" /></div>
+      <div><img src="img/fotoe.jpg" alt="" /></div>
+      <div><img src="img/fotof.jpg" alt="" /></div>
+      <div><img src="img/fotog.jpg" alt="" /></div>
+      <div><img src="img/fotoh.jpg" alt="" /></div>
+      <div><img src="img/fotoi.jpg" alt="" /></div>
+      <div><img src="img/fotoj.jpg" alt="" /></div>
+      <div><img src="img/fotok.jpg" alt="" /></div>
+      <div><img src="img/fotol.jpg" alt="" /></div>
+      <div><img src="img/fotom.jpg" alt="" /></div>
+      <div><img src="img/foton.jpg" alt="" /></div>
+      <div><img src="img/fotoo.jpg" alt="" /></div>
+      <div><img src="img/fotop.jpg" alt="" /></div>
+      <div><img src="img/fotoq.jpg" alt="" /></div>
+      <div><img src="img/fotor.jpg" alt="" /></div>
+      <div><img src="img/fotos.jpg" alt="" /></div>
+      </div>
+
+
+
+
+    </div> <!-- wrapper end -->
+
+    <div id="footer-wrap">
+      <footer><p>&copy; Gruppe 4 | 2017</p><br>
+        <div class="social">
+          <img id="instagram" src="img/instagram.png" alt="Our Instagram">
+          <img id="facebook" src="img/facebook.png" alt="Our Facebook">
+          <img id="youtube" src="img/youtube.png" alt="Our YouTube">
+          <img id="pinterest" src="img/pinterest.png" alt="Our Pinterest">
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>

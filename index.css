@@ -1,0 +1,195 @@
+/* general styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Molengo', sans-serif;
+}
+
+#wrapper {
+  height: 90%;
+  margin: 0 auto;
+}
+
+/* logo styling */
+.logo {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Bad Script', cursive;
+  font-size: 24px;
+}
+
+.logo a {
+  border-bottom: 1px solid #DDD;
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+}
+
+/* navigation styling */
+.nav-container {
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 22px 10px;
+  margin-top: 22px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+  font-family: 'Bad Script', cursive;
+}
+
+#active {
+  border-bottom: 2px solid #DDD;
+}
+
+.menu li a:hover {
+  color: #DDD;
+}
+
+/* images */
+.box img {
+  height: 200px;
+  width: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.box p {
+  margin: 20px auto;
+  line-height: 125%;
+  text-align: center;
+}
+
+
+.container, .billedet {
+    position: relative;
+    width: 100%;
+}
+
+.container .billedet img {
+  width:100%;
+  height:auto;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    color: #FFF;
+    font-family: 'Bad Script', cursive;
+}
+
+
+
+#hero img {
+
+}
+
+/* footer */
+#footer-wrap {
+  background-color: #F0F0F0;
+  margin: 10 auto;
+}
+/* footer */
+footer {
+  border: 1px solid #F0F0F0;
+  font-size: 20px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-family: 'Molengo';
+  margin: 20px;
+}
+
+footer p {
+  margin-top: 15px;
+}
+
+/* social media images footer */
+#pinterest {
+  margin: 0 15px;
+  height: 22px;
+  width: auto
+}
+
+#instagram {
+  margin: 0 15px;
+  height: 22px;
+  width: auto;
+}
+
+#facebook {
+  margin: 0 15px;
+  height: 22px;
+  width: auto;
+  padding: 2px;
+}
+
+#youtube {
+  margin: 0 15px;
+  height: 25px;
+  width: auto;
+}
+
+/* til iPhone 5 - mindste skærm. Justering af navigation font-size, så de ikke stacker */
+@media screen and (min-width: 320px){
+  .menu a {
+    font-size: 13px;
+  }
+
+  .center{
+    font-size: 13px;
+  }
+
+}
+
+@media screen and (min-width: 200px){
+  .center {
+    font-size: 30px;
+  }
+}
+
+/* 600px breakpoint, så elementer passer bedre på større skærme */
+@media screen and (min-width: 600px) {
+  #wrapper {
+
+}
+
+/* logo */
+  .logo {
+    font-size: 50px;
+  }
+
+/* navigation */
+  .menu a {
+    font-size: 20px;
+    margin-bottom: 22px;
+  }
+
+/* images */
+  .box p {
+    width: 200px;
+    margin: 10px auto;
+  }
+
+  .center {
+    font-size: 50px;
+  }
+
+  #hero img {
+    width: 100%;
+  }
+}

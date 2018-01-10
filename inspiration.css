@@ -1,0 +1,163 @@
+/* general styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Molengo', sans-serif;
+}
+
+#wrapper {
+  height: 90%;
+  margin: 0 auto;
+}
+
+/* logo styling */
+.logo {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Bad Script', cursive;
+  font-size: 24px;
+}
+
+.logo a {
+  border-bottom: 1px solid #DDD;
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+}
+
+#active {
+  border-bottom: 2px solid #DDD;
+}
+
+/* navigation styling */
+.nav-container {
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 22px 10px;
+  margin-top: 22px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+  font-family: 'Bad Script', cursive;
+}
+
+.menu li a:hover {
+  color: #DDD;
+}
+
+/* footer */
+#footer-wrap {
+  background-color: #F0F0F0;
+  margin: 10 auto;
+}
+/* footer */
+footer {
+  border: 1px solid #F0F0F0;
+  font-size: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-top: 15px;
+}
+
+/* social media images footer */
+#pinterest {
+  margin: 0 15px;
+  height: 22px;
+  width: auto
+}
+
+#instagram {
+  margin: 0 15px;
+  height: 22px;
+  width: auto;
+}
+
+#facebook {
+  margin: 0 15px;
+  height: 22px;
+  width: auto;
+  padding: 2px;
+}
+
+#youtube {
+  margin: 0 15px;
+  height: 25px;
+  width: auto;
+}
+
+/* til iPhone 5 - mindste skærm. Justering af navigation font-size, så de ikke stacker */
+@media screen and (min-width: 320px){
+  .menu a {
+    font-size: 13px;
+  }
+
+  /*Diashow af billeder */
+  #slideshow {
+      margin: 50px auto;
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      height: 520px;
+      padding: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  }
+
+  #slideshow > div {
+      position: absolute;
+      top: 10px;
+      left: 50px;
+      bottom: 10px;
+  }
+  img {
+    height: 500px;
+    width: 100%;
+    max-width: 800px;
+  }
+
+
+}
+
+/* 600px breakpoint, så elementer passer bedre på større skærme */
+@media screen and (min-width: 600px) {
+  #wrapper {
+
+}
+
+/* logo */
+  .logo {
+    font-size: 50px;
+  }
+
+/* navigation */
+  .menu a {
+    font-size: 20px;
+    margin-bottom: 22px;
+  }
+
+
+  p {
+    margin: 50px
+      font-family: 'Molengo', sans-serif;
+      font-size: 20px;
+      text-align: center;
+      margin: 22px 10px;
+      margin-top: 22px;
+      margin-left: 300px;
+      margin-right: 300px;
+  }
+
+
+
+}
